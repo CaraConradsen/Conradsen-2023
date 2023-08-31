@@ -1,0 +1,266 @@
+\subsection{CHC and wing phenotyping}
+In the sixth generation of the population size treatment application, in addition to the focal male fitness assays, we simultaneously collected male wing and cuticular hydrocarbons (CHCs) phenotypes. From the same natal vials used to collect virgin males for the fitness assay (see Main Methods), an additional four males were collected for cuticular hydrocarbons extraction. CHCs are frequently used in \textit{Drosophila serrata} studies, a recent example, \citet{Redd21} use CHCs to investigate multivariate sexual selection. Each male fly was washed using 100$\mu$L solvent hexane and CHCs were quantified using the standard gas chromatography method \citep{Blow98}. This resulted in 637 males assayed (four males from two treatments per each of the 42 lines), where eight log-contrast values were estimated by transforming the amount of each CHC against a reference as per \citet{Aitc82}. Across all CHC data, a total of 22 outliers greater than 3.0 standard deviations from the mean, estimated per trait, were excluded. Wings were collected from both the male flies used in the fitness assays and from the focal males used in the CHC assays, and consequently we had 854 wings from which we calculated ten inter-vein landmark distances (ILDs) and size (taken as the centroid size value; more detail on wing phenotyping in Chp. 2). Fifty univariate outliers ($>3$SD) where excluded before analyses. For both the CHC log-contrast traits and the eleven wing traits, line breeding values (best linear unbiased predictors, BLUPs) per treatment were estimated separately for each trait, by applying Equation \ref{eqn:FitlogOR} (main text).\par
+
+\FloatBarrier
+\begin{figure}[!hb]
+    \centering
+    \includegraphics[width=1\textwidth]{Supp/Chp4_DNA/MultiBreedingVals.png}
+\caption[Distribution of breeding values for twenty traits for each of the forty-two MA lines. ]{\textbf{Distribution of breeding values for twenty traits for each of the forty-two MA lines.} Equation \ref{eqn:FitlogOR} was used to estimate best linear unbiased predictors (BLUPs) separately for each trait, for the terminal generation, excluding univariate outliers [for each trait] that exceeded 3.0 standard deviations from the mean. Traits consisted of ten fly wing inter-vein landmark distances and, fly wing centroid size (see Chapter 2 methods); eight log-contrasts of cuticular hydrocarbons (CHCs); and, the log-ratio for fitness (main text, Figure \ref{fig:FitBlups}). To compare values across traits, we determined the interquartile range (IQR) deviations for each breeding value, for a trait, within a treatment. IQR deviations are more robust to detecting extreme outliers, where we considered outliers as anything deviating more than 3 IQR from the median. For each MA line, grey boxes represent estimates from the Large population size treatment (B), and the overlayed, smaller, white boxes represent the distribution of estimates from the Small population size treatments (S). Points represent estimates that are greater than 1.5 times the interquartile range (B, grey dots; S, white dots). }
+    \label{fig:DNAsuppBlups}
+\end{figure}
+
+\FloatBarrier
+
+\begin{figure}[!b]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Supp/Chp4_DNA/Hist22.png}
+\caption[Histograms of depth of coverage for the major scaffolds in each pool mapped to the \textit{D. serrata} genome.]{\textbf{Histograms of depth of coverage for the major scaffolds in each pool mapped to the \textit{D. serrata} genome.} The median (vertical black lines) and the depth threshold (median $\pm 2\ \times$~interquartile range, blue dashed lines). The x-axis magnifies the distribution for the range of read depth coverage from 0 to 140, spanning the upper and lower depth thresholds, where right-hand distribution tails range upwards of 100,000.}
+    \label{fig:DNAsuppDepthHist}
+\end{figure}
+
+\FloatBarrier
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1\textwidth]{Supp/Chp4_DNA/TajimasD_Chrom.pdf}
+\caption[Tajima’s D estimates of neutrality along chromosomes arms in non-overlapping 50kbp windows. ]{\textbf{Tajima’s D estimates of neutrality along chromosomes arms in non-overlapping 50kbp windows.} Each panel represents a chromosome arm (x-axis) for each generation (right y-axis). Tajima’s D (left y-axis) was estimated for each treatment separately (S treatment, red; L treatment, blue), where there is large overlap between treatment estimate values (purple). The horizontal grey dash line at zero is the neutral expectation, indicating that the number of segregating sites is equivalent to the number of intermediate-frequency sites. For comparison, we excluded 56 (2\%) of windows that had poor coverage ($< 60\%$ did not meet minimum coverage threshold) that could not be estimated across all pools.}
+    \label{fig:DNAsuppTajD}
+\end{figure}
+
+\FloatBarrier
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Supp/Chp4_DNA/2022.20.05_TemporalDiffs.pdf}
+\caption[The relationship between the maximum absolute focal allele ($p$) change across a single generation against the temporal change in focal allele ($p$) frequencies.]{\textbf{The relationship between the maximum absolute focal allele ($p$) change across a single generation against the temporal change in focal allele ($p$) frequencies.} Temporal allele frequency differences were determined using the average allele frequency of the two terminal generations (6 and 7) minus the average allele frequency of the two initial generations (1 and 2), where the absolute difference is plotted (x-axis). Deterministic allele frequency change should result in consistent divergence in allele frequencies overtime; however, several loci have large allele frequency differences ($|p_{ti} - p_{ti-1}| > 0.6$; y-axis) across a single generation but this change does not persist through time (i.e., $|$terminal $p$ – initial $p| < 0.55$; x-axis). Further investigation (results not shown) revealed patterns of poor sampling, and these loci were removed from further analyses. }
+    \label{fig:DNAsuppBouncyP}
+\end{figure}
+\vspace{-2cm}
+\FloatBarrier
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Supp/Chp4_DNA/MAF_trtxgen_22.png}
+\caption[The derived (minor) allele frequency, q, spectrum for SNPs within each treatment for each of the seven generations. ]{\textbf{The derived (minor) allele frequency, $q$, spectrum for SNPs within each treatment for each of the seven generations. } }
+    \label{fig:DNAsuppSiteFreqMAF}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Supp/Chp4_DNA/TwoInvariants.pdf}
+    \vspace{-0.4cm}
+\caption[Focal allele frequency difference ($\Delta p_{L-S}$) across time for loci that had a fixed ancestral allele in the large population treatment but had a derived allele arise in the small population treatment.]{\textbf{Focal allele frequency difference ($\Delta p_{L-S}$) across time for loci that had a fixed ancestral allele in the large population treatment but had a derived allele arise in the small population treatment.} Sixty-three loci were screened as novel mutations arising and segregating in the final generations of the experiment. Fourteen loci were distinct in sharing a minor allele that arose after the fourth generation (A), and the remainder of loci had a minor allele arise after the fifth generation (B). Both SNPs (blue lines) and indels (red lines) were considered.}
+    \label{fig:DNAsuppInvaraint}
+\end{figure}
+
+
+\FloatBarrier
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Supp/Chp4_DNA/2023_Coverage6vs7.pdf}
+\caption[Coverage of loci in the sixth generation against coverage in the seventh generation, plotting the small (A and C) and large (B and D) population treatments separately. ]{\textbf{Coverage of loci in the sixth generation against coverage in the seventh generation, plotting the small (A and C) and large (B and D) population treatments separately.} Comparisons were made for all loci (top panels) and the 12,352 loci that were outliers for $F_{ST}$ and $\Delta p$ (bottom panels). In C and D, the 248 outliers that were detected across both terminal generations are represented in blue and the corresponding Spearman’s correlation between the coverage in the sixth and seventh generation is on the right plot border in blue.  }
+    \label{fig:DNAsuppDepthHist}
+\end{figure}
+
+\FloatBarrier
+
+%======Main Eigentensor Eigenvector Loadings========
+\begin{table}[!htbp]
+\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\caption[Qualimap sample statistics for sequence alignment for the fourteen pooled populations against the \textit{D. serrata} genome.]{\textbf{Qualimap sample statistics for sequence alignment for the fourteen pooled populations against the \textit{D. serrata} genome.}}
+\label{tab:DNAsuppQualimap}
+\begin{tabular}{ccS[table-format=2.2]S[table-format=4.2]S[table-format=2.2]S[table-format=2.2]c}
+\toprule
+\textbf{Population} & \textbf{Generation}
+& \multicolumn{1}{m{1.7cm}}{\centering \textbf{Coverage \\ means}}
+& \multicolumn{1}{m{1.75cm}}{\centering \textbf{Coverage \\ SD} }
+& \multicolumn{1}{m{2cm}}{\centering \textbf{GC \\ percentage} }
+& \multicolumn{1}{m{2.8cm}}{\centering \textbf{Mapping quality \\ mean }}
+& \multicolumn{1}{m{1.6cm}}{\centering \textbf{Insert size \\ median} }\\[1ex]
+\midrule
+Small	& 1		& 64.53	& 858.07	& 40.41	& 41.73	& 344 \\
+		& 2		& 60.80	& 801.13	& 40.41	& 41.58	& 344 \\
+		& 3		& 68.86	& 914.66	& 40.42	& 41.79	& 344 \\
+		& 4		& 78.66	& 977.47	& 40.34	& 41.23	& 359 \\
+		& 5		& 79.93	& 1060.72	& 40.44	& 41.89	& 344 \\
+		& 6		& 86.73	& 1142.54	& 40.44	& 41.90	& 345 \\
+		& 7		& 75.06	& 1011.12	& 40.42	& 41.89	& 344 \\ [1.5ex]
+Large	& 1		& 60.67	& 801.13	& 40.41	& 41.58	& 344 \\
+		& 2		& 76.03	& 1019.99	& 40.43	& 41.87	& 343 \\
+		& 3		& 66.26	& 915.28	& 40.67	& 41.34	& 347 \\
+		& 4		& 60.71	& 801.13	& 40.41	& 41.58	& 344 \\
+		& 5		& 65.34	& 858.09	& 40.43	& 41.73	& 344 \\
+		& 6		& 69.77	& 850.40	& 40.37	& 41.20	& 358 \\
+		& 7		& 48.48	& 637.48	& 40.40	& 41.18	& 343 \\ [1ex]
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!b]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\caption[Statistical support for the effect of population size treatments within a generation on Tajima’s D test for genomic neutrality.]{\textbf{Statistical support for the effect of population size treatments within a generation on Tajima’s D test for genomic neutrality.} Post-hoc pairwise Kruskal-Wallis rank sum tests were used to determine if there were differences in the treatment medians of the 50 kbp non-overlapping window estimates of Tajima’s D within each sampled generation. Each $H$ statistic had one degree of freedom, where the $P$-values were corrected for multiple testing using a 5\% false discovery rate, (5\%~FDR~$P$-value; significant tests in bold).}
+\label{tab:DNAsuppKruskalW}
+\begin{tabular}{cS[table-format=3.2]cS[table-format=1.3]S[table-format=1.3]}
+\toprule
+\textbf{Generation}	& \bfseries{$H$} & \textbf{Degrees of freedom}	& \textbf{$P$-{}-value} & \textbf{5\% FDR $P$--value} \\
+\midrule
+1	& 2.06	& 1	& 0.151	             & 0.151\\
+2	& 35.68	& 1	& \textbf{0.000}	& \textbf{0.000}\\
+3	& 13.76	& 1	& \textbf{0.000}	& \textbf{0.000}\\
+4	& 280.37 &	1	& \textbf{0.000}	& \textbf{0.000}\\
+5	& 74.43	& 1 	& \textbf{0.000}	& \textbf{0.000}\\
+6	& 68.62	& 1	& \textbf{0.000}	& \textbf{0.000}\\
+7	& 426.56 &	1	& \textbf{0.000}	& \textbf{0.000}\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!htbp]
+\renewcommand{\arraystretch}{1.4}
+\begin{center}
+\caption[Variant calling using FreeBayes-parallel.]{\textbf{Variant calling using FreeBayes-parallel.} FreeBayes processes aligned sequencing reads from the BAM format and produces a variant call format (VCF) file containing per position variant calls. Parameters were set (as below) to report observed counts of SNPs, indels and non-variant (fixed) regions. FreeBayes-parallel was run separately for each of the 14 ($n$) poolseq samples, and processing was optimised within a parallel framework.}
+\label{tab:DNAsuppFreeBayParms}
+\begin{tabular}{p{0.31\textwidth}p{0.59\textwidth}}
+\toprule
+\textbf{Model Parameter}	& \textbf{Description} \\
+\midrule
+ -{}- region $n$. regions	& Region files specifying 800 regions of equal coverage generated using the supplied \textit{coverage\_to\_regions.py} script for the $n^{th}$ pooled sample. \\
+22	& The number of cores used.\\
+-{}-fasta-reference dserrata.fasta &	Fasta reference genome file for \textit{Drosophila serrata}.\\
+-{}-min-base-quality 20	& Minimum base quality for an allele, set using the Phred score indicating the probability for the allele nucleotide base (Phred score of 20 ~ 99\% accuracy).\\
+-{}-min-mapping-quality 20	& Minimum mapping quality removes alignments from analysis if the probability of read alignment to the reference genome is less than 20. \\
+-{}-min-alternate-count 2 & The minimum coverage (number of reads) for an alternate allele is 2, as recommended by \citet{Kofl11}.\\
+-{}-min-alternate-fraction $q$	& The alternate fraction ($q$) of observations (reads) for the alternate allele was set to zero. For a coverage of 80 (40 diploid females), the lowest possible $q$ is 0.0125. However, coverage was variable where some loci exceeded 80 (and $q$ < 0.0125 became possible). Setting a threshold >0 might bias against detecting alleles in some pools.\\
+-{}-min-coverage $i$	& The minimum coverage ($i$) at a locus was calculated per sample, as the median read depth minus twice the interquartile range (Figure \ref{fig:DNAsuppDepthHist}). This minimises the influence of sequencing errors. \\ 
+-{}-skip-coverage $j$ & The maximum coverage ($j$) was the upper coverage limit for loci, and was calculated here, per sample, as the median read depth plus twice the interquartile range (Figure \ref{fig:DNAsuppDepthHist}). By setting a maximum coverage length we both avoid repetitive regions and aid with computational demands due to running analyses in parallel.\\
+-{}-haplotype-length -1 &	We ensured whole alignments were considered for variant calling by removing the minimum haplotype length restriction (value of 1 – indicates parameter is not used).\\
+-{}-report-monomorphic &	Reports the read depth for both variant and non-variant loci.\\
+-{}-pooled-continuous &	Output all alleles which pass input filters.\\
+-{}-bam $n$. bam	& The $n^{th}$ pooled sample bam file.\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!b]
+\renewcommand{\arraystretch}{0.94}
+\begin{center}
+\tiny
+\caption[Summary of the 63 loci invariant in the large population treatment but segregating within the small population treatment.]{\textbf{Summary of the 63 loci invariant in the large population treatment but segregating within the small population treatment.} Chromosome (Chr.), Scaffold and Position provide the locus position where Reference allele is the reference genome base assembled by \citet{Alle17B}. The Focal allele (MA ancestral), defined as the major allele ($p$) in the first generation of the small population, was fixed in the large population treatment. The variant (Minor, derived, $q$) allele was only detected in the small treatment, categorised as either an Indel or SNP (TYPE) with reference to the focal allele. Focal [derived] alleles identical to the ancestral reference base are italicised and highlighted in red [blue]; non-italicised variants are novel. Using SNPEff \citep{Cing12}, loci were localised to either an intergenic or exonic Region in the annotated \textit{Drosophila serrata} genome. Maximum minor allele frequency (MAF) and minor allele coverage. Metrics of treatment divergence: Spearman's Rank coefficient for focal allele frequency difference ($\rho\Delta p_{L-S}$) and pairwise $F_{ST}$ for generation six are defined in the Main Methods. Asterisks after $F_{ST}$ values indicate locus was present in the outlier analyses (Main Methods; Figure \ref{fig:FitFstNdeltapDists}).}
+\label{tab:DNAsupp63Invaraint}
+\begin{tabular}{ccS[table-format=8.0]ccccccS[table-format=2.0]S[table-format=1.2]S[table-format=1.3]}
+\toprule
+\textbf{Chr.} & \textbf{Scaffold} &
+\textbf{Position} & 
+\multicolumn{1}{m{0.8cm}}{\centering \textbf{Reference\\Allele}} &
+\multicolumn{1}{m{1.7cm}}{\centering \textbf{Focal Allele\\(major, $p$)}} &
+\multicolumn{1}{m{1.2cm}}{\centering \textbf{Minor Allele\\(minor, $q$)}} & 
+\textbf{Type} & \textbf{Region} &
+\multicolumn{1}{m{0.5cm}}{\centering \textbf{Max.\\MAF}} &
+\multicolumn{1}{m{1.1cm}}{\centering \textbf{Maximum\\minor allele\\coverage}} &
+\multicolumn{1}{m{1.1cm}}{\centering \textbf{Spearman's\\rank\\coefficient}} &
+\multicolumn{1}{m{1.2cm}}{\centering \textbf{Generation 6  \\ $F_{ST}$}}\\
+\midrule
+ 2L& SCA8VGG\_542; & 1234066 & T & \textcolor{red}{\textit{T}} & G & SNP & Exonic & 0.11 & 5 & 0.84 & 0.06\\
+ & HRSCAF=776 & 1639640 & A & AT & \textcolor{blue}{\textit{A}} & SNP & Exonic & 0.10 & 8 & 0.80 & 0.05\\
+ &  & 7384086 & T & TA & \textcolor{blue}{\textit{T}} & SNP & Exonic & 0.07 & 4 & 0.80 & 0.03\\
+ &  & 7461873 & C & CA & \textcolor{blue}{\textit{C}} & SNP & Exonic & 0.05 & 5 & 0.76 & 0.03\\
+ &  & 8545894 & C & CT & \textcolor{blue}{\textit{C}} & SNP & Exonic & 0.06 & 5 & 0.80 & 0.02\\
+ &  & 9145300 & A & AT & \textcolor{blue}{\textit{A}} & SNP & Intergenic & 0.05 & 4 & 0.76 & 0.03\\
+ &  & 5875146 & C & CT & \textcolor{blue}{\textit{C}} & SNP & Intergenic & 0.06 & 4 & 0.80 & 0.03\\
+ &  & 10662091 & G & GA & \textcolor{blue}{\textit{G}} & SNP & Intergenic & 0.08 & 5 & 0.80 & 0.03\\
+ &  & 11873033 & C & \textcolor{red}{\textit{C}} & T & SNP & Intergenic & 0.05 & 3 & 0.80 & 0.02\\
+ &  & 12260645 & C & CCTTTT & \textcolor{blue}{\textit{C}} & Indel & Exonic & 0.09 & 5 & 0.76 & 0.05\\
+ &  & 13210226 & A & AT & \textcolor{blue}{\textit{A}} & SNP & Intergenic & 0.09 & 5 & 0.80 & 0.04\\
+ &  & 14708933 & C & CT & T & SNP & Intergenic & 0.05 & 3 & 0.80 & 0.02\\
+ &  & 15844684 & T & TAC & \textcolor{blue}{\textit{T}} & Indel & Exonic & 0.24 & 12 & 0.80 & 0.12*\\
+ &  & 16408575 & G & \textcolor{red}{\textit{G}} & T & SNP & Intergenic & 0.08 & 3 & 0.80 & 0.04\\
+ & SCA8VGG\_718; & 4557345 & T & TA & \textcolor{blue}{\textit{T}} & SNP & Intergenic & 0.06 & 5 & 0.80 & 0.02\\
+ & HRSCAF=1046 & 7794908 & A & ATT & \textcolor{blue}{\textit{A}} & Indel & Exonic & 0.09 & 8 & 0.76 & 0.05\\
+ &  & 8347816 & G & GC & \textcolor{blue}{\textit{G}} & SNP & Exonic & 0.06 & 5 & 0.80 & 0.03\\
+ &  & 8539578 & A & AT & \textcolor{blue}{\textit{A}} & SNP & Intergenic & 0.06 & 5 & 0.80 & 0.03\\
+ \midrule
+ 2R & SCA8VGG\_785; & 1666529 & G & GA & \textcolor{blue}{\textit{G}} & SNP & Intergenic & 0.05 & 4 & 0.76 & 0.03\\
+ & HRSCAF=1140 & 9693364 & C & CCTT & T & Indel & Intergenic & 0.06 & 4 & 0.76 & 0.03\\
+ &  & 14395585 & A & AAATAT & \textcolor{blue}{\textit{A}} & Indel & Intergenic & 0.06 & 5 & 0.76 & 0.03\\
+ &  & 22443906 & C & CACACCCAT & \textcolor{blue}{\textit{C}} & Indel & Exonic & 0.09 & 6 & 0.80 & 0.05\\
+ &  & 24888644 & G & GA & \textcolor{blue}{\textit{G}} & SNP & Exonic & 0.05 & 3 & 0.80 & 0.02\\
+ \midrule
+3L & SCA8VGG\_628; & 5833643 & G & GA & A & SNP & Exonic & 0.06 & 3 & 0.80 & 0.03\\
+ & HRSCAF=890 & 7952621 & A & AT & \textcolor{blue}{\textit{A}} & SNP & Exonic & 0.12 & 10 & 0.80 & 0.06\\
+ &  & 14360368 & C & CA & A & SNP & Intergenic & 0.05 & 4 & 0.87 & 0.03\\
+ &  & 23440216 & G & \textcolor{red}{\textit{G}} & A & SNP & Intergenic & 0.06 & 4 & 0.87 & 0.03\\
+ &  & 23440217 & G & A & \textcolor{blue}{\textit{G}} & SNP & Intergenic & 0.05 & 4 & 0.87 & 0.03\\
+ &  & 23440228 & C &\textcolor{red}{\textit{C}} & T & SNP & Intergenic & 0.06 & 4 & 0.87 & 0.03\\
+ &  & 23440245 & T &\textcolor{red}{\textit{T}} & TA & Indel & Intergenic & 0.05 & 4 & 0.87 & 0.03\\
+ &  & 23440246 & C &\textcolor{red}{\textit{C}} & CAAA & Indel & Intergenic & 0.05 & 4 & 0.87 & 0.03\\
+ &  & 23440248 & C &\textcolor{red}{\textit{C}} & CT & Indel & Intergenic & 0.05 & 4 & 0.87 & 0.03\\
+ &  & 24054133 & T & A & \textcolor{blue}{\textit{T}} & SNP & Intergenic & 0.1 & 7 & 0.76 & 0.05\\
+ &  & 28892440 & C & CA & \textcolor{blue}{\textit{C}} & SNP & Exonic & 0.05 & 5 & 0.76 & 0.03\\
+ &  & 29254069 & G & GGTT & \textcolor{blue}{\textit{G}} & Indel & Exonic & 0.08 & 6 & 0.76 & 0.04\\
+ \midrule
+ 3R & SCA8VGG\_76; & 814769 & A & ATTT & \textcolor{blue}{\textit{A}} & Indel & Exonic & 0.06 & 5 & 0.76 & 0.03\\
+ & HRSCAF=120 & 2659155 & C & T & A & SNP & Intergenic & 0.06 & 3 & 0.87 & 0.03\\
+ &  & 16381559 & CT & C & \textcolor{blue}{\textit{CT}} & Indel & Intergenic & 0.09 & 7 & 0.80 & 0.05\\
+ &  & 17422635 & C & CT & T & SNP & Exonic & 0.06 & 4 & 0.80 & 0.03\\
+ &  & 17882837 & C & T & \textcolor{blue}{\textit{C}} & SNP & Exonic & 0.13 & 11 & 0.76 & 0.07*\\
+ &  & 17882838 & T & C & \textcolor{blue}{\textit{T}} & SNP & Exonic & 0.13 & 11 & 0.76 & 0.07*\\
+ &  & 20830093 & T & TTTTGCTTTGC & C & Indel & Intergenic & 0.05 & 3 & 0.80 & 0.02\\
+ &  & 21122946 & A & AT & \textcolor{blue}{\textit{A}} & SNP & Exonic & 0.06 & 5 & 0.76 & 0.03\\
+ &  & 24407217 & GCAG & G & \textcolor{blue}{\textit{GCAG}} & Indel & Exonic & 0.07 & 4 & 0.80 & 0.03\\
+ &  & 26267574 & TA & T & \textcolor{blue}{\textit{TA}} & Indel & Exonic & 0.07 & 6 & 0.76 & 0.03\\
+ &  & 26373577 & AAT & \textcolor{red}{\textit{AAT}} & A & Indel & Intergenic & 0.08 & 4 & 0.87 & 0.04\\
+ &  & 35443451 & C & \textcolor{red}{\textit{C}} & A & SNP & Intergenic & 0.07 & 3 & 0.80 & 0.03\\
+ \midrule
+ X & SCA8VGG\_594; & 5513872 & T & \textcolor{red}{\textit{T}} & A & SNP & Intergenic & 0.05 & 3 & 0.87 & 0.03\\
+ & HRSCAF=845 & 7843237 & A & AGGTAGGAAG & \textcolor{blue}{\textit{A}} & Indel & Exonic & 0.14 & 11 & 0.76 & 0.08*\\
+ &  & 8365245 & G & \textcolor{red}{\textit{G}} & A & SNP & Exonic & 0.06 & 3 & 0.80 & 0.03\\
+ &  & 9151570 & TGAG & T & TAG & Indel & Exonic & 0.05 & 3 & 0.87 & 0.03\\
+ &  & 10260205 & C &\textcolor{red}{\textit{C}} & A & SNP & Intergenic & 0.07 & 3 & 0.80 & 0.03\\
+ &  & 10260225 & G &\textcolor{red}{\textit{G}} & T & SNP & Intergenic & 0.05 & 3 & 0.80 & 0.02\\
+ &  & 14676663 & A &\textcolor{red}{\textit{A}} & C & SNP & Exonic & 0.06 & 3 & 0.80 & 0.02\\
+ &  & 16995279 & G & A & \textcolor{blue}{\textit{G}} & SNP & Intergenic & 0.06 & 6 & 0.76 & 0.03\\
+ &  & 17885746 & CA & C & \textcolor{blue}{\textit{CA}} & Indel & Intergenic & 0.07 & 6 & 0.76 & 0.04\\
+ &  & 18673610 & C & CAAACCCAATAA & \textcolor{blue}{\textit{C}} & Indel & Exonic & 0.16 & 10 & 0.80 & 0.08*\\
+ &  & 24454337 & T & C & \textcolor{blue}{\textit{T}} & SNP & Intergenic & 0.07 & 4 & 0.87 & 0.03\\
+ &  & 26336051 & C & CA & A & SNP & Exonic & 0.05 & 3 & 0.80 & 0.02\\
+ &  & 26891723 & C & T & \textcolor{blue}{\textit{C}} & SNP & Intergenic & 0.05 & 3 & 0.87 & 0.03\\
+ &  & 27919844 & A & ATTC & \textcolor{blue}{\textit{A}} & Indel & Intergenic & 0.18 & 16 & 0.76 & 0.10*\\
+ &  & 28556020 & C & CA & \textcolor{blue}{\textit{C}} & SNP & Exonic & 0.08 & 7 & 0.76 & 0.04\\
+ &  & 28860275 & C & CA & \textcolor{blue}{\textit{C}} & SNP & Exonic & 0.05 & 4 & 0.80 & 0.02\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!b]
+\renewcommand{\arraystretch}{1}
+\begin{center}
+\small
+\caption[SnpEff (v5.1) annotation for the 248 outlier loci.]{\textbf{SnpEff (v5.1) annotation for the 248 outlier loci.} There were 511 unique annotations, with some variants having multiple annotations (median number per loci = 2 and maximum =~5). Eleven categories of putative loci effect were further classified by functional impact (high, moderate, low and modifier). }
+\label{tab:DNAsuppSnpEff}
+\begin{tabular}{lcS[table-format=3.0]S[table-format=2.1]}
+\toprule
+\textbf{SnpEff Annotation} & \textbf{Functional Impact} &
+\textbf{Number of loci} & \textbf{Percentage}\\
+\midrule
+3\_prime\_UTR\_variant&modifier&1&0.2\%\\
+5\_prime\_UTR\_variant&modifier&1&0.2\%\\
+downstream\_gene\_variant&modifier&67&13.1\%\\
+intergenic\_region&modifier&130&25.4\%\\
+intragenic\_variant&modifier&11&2.2\%\\
+intron\_variant&modifier&108&21.1\%\\
+missense\_variant&moderate&4&0.8\%\\
+non\_coding\_transcript\_exon\_variant&modifier&4&0.8\%\\
+non\_coding\_transcript\_variant&modifier&108&21.1\%\\
+synonymous\_variant&low&1&0.2\%\\
+upstream\_gene\_variant&modifier&76&14.9\%\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\input{Supp/Chp4_DNA/Tab_Supp_GoTerms}

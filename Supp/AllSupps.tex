@@ -1,0 +1,56 @@
+\newcommand{\resetcounters}{%
+\setcounter{table}{0}
+\setcounter{figure}{0}% Reset figure counter
+}
+\resetcounters
+\let\oldthefigure\thefigure% Capture figure numbering scheme
+    \renewcommand{\thefigure}{A\oldthefigure}% Prefix figure number with S
+\let\oldthetable\thetable% Capture figure numbering scheme
+    \renewcommand{\thetable}{A\oldthetable}% Prefix figure number with S
+
+\let\oldchapter\chapter% Copy \chapter into \oldchapter
+    \renewcommand{\chapter}{% Update \chapter
+        \let\thefigure\oldthefigure% Copy \thefigure into \oldthefigure
+        \let\thetable\oldthetable% Copy \thefigure into \oldthefigure
+        \let\chapter\oldchapter% Restore original \chapter
+    \oldchapter% Call original \chapter
+}
+
+%==== Chp. 2 SI ====%
+\FloatBarrier
+\setcounter{chapter}{1}
+\setcounter{table}{0}
+\setcounter{figure}{0}% Reset figure counter
+{\Large\bfseries{\noindent Appendix\ \thechapter: {} Supporting information for Chapter 2}\\}
+\addcontentsline{toc}{chapter}{Appendix \thechapter. Supporting information for Chapter 2}\bigskip
+\input{Supp/Chp2_Meta/Supp}
+
+% ==== Chp. 3 SI ====%
+\newpage
+\FloatBarrier
+\setcounter{chapter}{2}
+\setcounter{table}{0}
+\setcounter{figure}{0}% Reset figure counter
+{\Large\bfseries{\noindent Appendix\ \thechapter: {} Supporting information for Chapter 3}\\}
+\addcontentsline{toc}{chapter}{Appendix \thechapter. Supporting information for Chapter 3}\bigskip
+\input{Supp/Chp3_Multi/EigenAnalyses}
+
+% ==== Chp. 4 SI ====%
+\newpage
+\FloatBarrier
+\setcounter{chapter}{3}
+\setcounter{table}{0}
+\setcounter{figure}{0}% Reset figure counter
+{\Large\bfseries{\noindent Appendix\ \thechapter: {} Supporting information for Chapter 4}\\}
+\addcontentsline{toc}{chapter}{Appendix \thechapter. Supporting information for Chapter 4}\bigskip
+\input{Supp/Chp4_DNA/MR_FitSupp}
+
+%==== Additional Info ====%
+\newpage
+\FloatBarrier
+\setcounter{chapter}{4}
+\setcounter{table}{0}
+\setcounter{figure}{0}% Reset figure counter
+{\Large\bfseries{\noindent Appendix\ \thechapter: {} Defining inter-landmark distances}\\}
+\addcontentsline{toc}{chapter}{Appendix \thechapter. Defining inter-landmark distances}\bigskip
+\input{Supp/Additional_Info/MR_SUPP_NEW_WING_ILDS}

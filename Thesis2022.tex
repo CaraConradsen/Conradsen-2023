@@ -1,0 +1,67 @@
+\documentclass[12pt, a4paper, titlepage,openany, twoside]{book}
+
+%===========================================
+%                 Fore-Matter          
+%===========================================
+\input{Preamble/General_preamble}
+% \usepackage{showframe}% check margins
+\usepackage{chngcntr} 
+\DeclareGraphicsExtensions{.eps} %from graphics package
+
+\begin{document}
+\frontmatter % sets page numbers to roman numerals
+\maketitle
+\clearpage
+\pagestyle{plain}
+\include{PreliminaryPages/Abstract}
+\include{PreliminaryPages/Authordeclaration}
+\begingroup
+\let\cleardoublepage\relax
+\let\clearpage\relax
+\begin{flushleft}
+\include{PreliminaryPages/Preliminary }
+\end{flushleft}
+\endgroup
+\include{Preamble/TOC}
+\include{PreliminaryPages/AbbList}
+
+%===========================================
+%                 THESIS CHAPTERS           
+%===========================================
+\mainmatter %set numbers to Arabic
+%%% =========1_Introduction =========
+\include{Chp1_Intro/Thesis_Intro}
+
+%%% =========2_MR_meta-analysis =========
+\include{Chp2_Meta/MR_Meta-analysis}
+
+% %%% =========3_MR_multivariate  =========
+\include{Chp3_Multi/MR_MultiVar}
+
+%% =========4_MR_Fitness  =========
+\include{Chp4_DNA/MR_Fitness}
+
+%% =========5_General Discussion  =========
+\include{Chp5_GeneralDisco/General_Disco}
+
+%===========================================
+%                 Post Matter          
+%===========================================
+
+%%%============= Supp ===============
+\include{Supp/AllSupps}
+\newpage
+
+
+%%%=============Bibliography===============
+\begingroup
+\let\cleardoublepage\relax
+\let\clearpage\relax
+\include{References/LitCited}
+\endgroup
+\newpage
+
+
+
+
+\end{document}
